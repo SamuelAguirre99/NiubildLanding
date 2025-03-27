@@ -3,16 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NiuBild - Plataforma que conecta constructoras, contratistas y proyectos con los materiales que necesitas, con entrega rápida y transparente.">
-    <meta name="keywords" content="materiales de construcción, construcción, contratistas, proyectos, entrega rápida">
-    <title>NiuBild - Materiales de Construcción en un Solo Click</title>
+    <meta name="description" content="NiuBild - Plataforma líder que conecta constructoras y contratistas con materiales de construcción. Entrega en el mismo día, geolocalización en tiempo real y precios transparentes.">
+    <meta name="keywords" content="materiales de construcción, constructoras, contratistas, proveedores de materiales, entrega rápida, geolocalización, precios transparentes, BildXpress, BildPlan, BildReport, ChatBild, México, Monterrey">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NiuBild">
+    <meta property="og:title" content="NiuBild - Materiales de Construcción en un Solo Click">
+    <meta property="og:description" content="Conectamos constructoras, contratistas y proyectos con los materiales que necesitan. Entrega rápida y transparente.">
+    <meta property="og:image" content="NIUBILD_logo.png">
+    <meta property="og:url" content="https://niubild.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NiuBild - Materiales de Construcción en un Solo Click">
+    <meta name="twitter:description" content="Conectamos constructoras, contratistas y proyectos con los materiales que necesitan. Entrega rápida y transparente.">
+    <meta name="twitter:image" content="NIUBILD_logo.png">
+    
+    <link rel="canonical" href="https://niubild.com">
+    <title>NiuBild - Materiales de Construcción en un Solo Click | Plataforma de Proveedores</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
-    <style>
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NiuBild",
+      "url": "https://niubild.com",
+      "logo": "https://niubild.com/NIUBILD_logo.png",
+      "description": "Plataforma que conecta constructoras, contratistas y proyectos con los materiales que necesitas, con entrega rápida y transparente.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Río Suchiate 684",
+        "addressLocality": "Del Valle, Monterrey",
+        "addressRegion": "N.L.",
+        "postalCode": "66220",
+        "addressCountry": "MX"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5286742948558",
+        "contactType": "customer service",
+        "email": "clientservice@niubild.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/niubild",
+        "https://www.instagram.com/niubild",
+        "https://www.youtube.com/niubild"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "NiuBild - Plataforma de Materiales de Construcción",
+      "provider": {
+        "@type": "Organization",
+        "name": "NiuBild"
+      },
+      "serviceType": "Plataforma de conexión",
+      "description": "Conectamos constructoras, contratistas y proyectos con proveedores de materiales de construcción, ofreciendo entrega rápida y transparencia en precios.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "MXN"
+      }
+    }
+    </script><style>
         html {
             max-width: 1900px;
         }
@@ -259,8 +341,7 @@
             }
         }
     </style>
-</head>
-<body>
+</head><body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -269,8 +350,21 @@
     <!-- Header -->
     <header id="header" class="header">
         <div class="logo">
-            <img class="logo-image" src="NIUBILD_logo.png" alt="NiuBild Logo">
+            <a href="#inicio" title="NiuBild - Inicio">
+                <img class="logo-image" src="NIUBILD_logo.png" alt="NiuBild - Materiales de construcción">
+            </a>
         </div>
+        <nav aria-label="Navegación principal" style="display: none;">
+            <!-- Hidden for now but good for SEO structure -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aboutus">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ventajas">Ventajas</a></li>
+                <li><a href="#one_click">One Click Experience</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
     </header>
     
     <!-- Hero Section -->
@@ -294,13 +388,12 @@
             </p>
             <a 
                 href="#registro" 
-                class="cta-button">
+                class="cta-button"
+                aria-label="Regístrate gratis en NiuBild">
                 Regístrate gratis
             </a>
         </div>
-    </section>
-    
-    <style>
+    </section><style>
         .section-header {
             margin-top: 25px;
             gap: 30px;
@@ -461,7 +554,8 @@
         
     </style>
     <section 
-        id="aboutus">
+        id="aboutus"
+        aria-label="¿Cómo funciona NiuBild?">
         <div class="section-header">
             <p 
                 class="section-title">
@@ -476,197 +570,196 @@
                 con la Demanda de manera ágil, transparente y 
                 en tiempo real.
             </p>
+        </div><div
+        style="margin-top: 50px"
+        class="section-content">
+        <div
+            class="card-holder-wrapper"
+            style="position: relative; width: 33%; height: 450px; max-height: 450px;">
+            <div
+                class="offer-demand-images"
+                style="
+                    border-top-right-radius: 50px;
+                    overflow: hidden;
+                    min-height: 400px;
+                    width: 100%; 
+                    position: absolute;
+                    top: 0px;
+                    background-image: url('yellow_truck_in_construction_site.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                "
+                aria-label="Imagen de camión de obra en sitio de construcción"
+            ></div>
+            <img 
+                class="blue-connector" 
+                style="    
+                    position: absolute;
+                    right: -6%;
+                    bottom: 63px;
+                    z-index: 11;
+                    rotate: 330deg;
+                    width: 50%;
+                " 
+                src="blue_connector_supply.png" 
+                alt="Conector de oferta">
+            <div
+                style="
+                    padding: 10px 30px;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 5;
+                    bottom: 0px;
+                "
+                class="offer-card">
+                <p 
+                    style="margin-top: 20px;  letter-spacing: 3px;"
+                    class="card-title">
+                    OFERTA
+                </p>
+                <hr
+                    style="border-top: #e7e7e7;
+                    border-top-style: solid;
+                    border-width: 1px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                ">
+                <div
+                    class="characteristics-holder"
+                    style="display: flex; flex-direction: row;">
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; ">
+                        <img src="checkmark.png" alt="Marca de verificación">
+                        <p
+                            class="card-characteristic">
+                            Distribuidoras
+                        </p>
+                    </div>
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center;">
+                        <img src="checkmark.png" alt="Marca de verificación">
+                        <p
+                            class="card-characteristic">
+                            Transformistas
+                        </p>
+                    </div>
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center;">
+                        <img src="checkmark.png" alt="Marca de verificación">
+                        <p
+                            class="card-characteristic">
+                            Fabricantes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div 
+            class="card-holder-wrapper bigger-logo-holder" 
+            style="
+                width: 33%;
+                height: 450px;
+                max-height: 450px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;">
+                <img class="chevron-img" src="chevron.png" alt="Flecha de dirección">
+                <div class="middle-logo-container">
+                    <img 
+                        class="logo-niubild-supply-demand"
+                        style="width: 98%;" src="NIUBILD_logo_bigger.png" alt="Logo de NiuBild - Conectando oferta y demanda">
+                </div>
+                <img class="chevron-img" src="chevron.png" alt="Flecha de dirección">
         </div>
         <div
-            style="margin-top: 50px"
-            class="section-content">
+            class="card-holder-wrapper card-holder-demand"
+            style="position: relative; width: 33%; height: 450px; max-height: 450px;">
+            
+            <img 
+                style="    
+                    position: absolute;
+                    left: -15%;
+                    bottom: 100px;
+                    z-index: 11;
+                    rotate: 0;
+                    width: 50%;
+                " 
+                class="orange-connector" 
+                src="orange_connector_demand.png" 
+                alt="Conector de demanda">
             <div
-                class="card-holder-wrapper"
-                style="position: relative; width: 33%; height: 450px; max-height: 450px;">
-                <div
-                    class="offer-demand-images"
-                    style="
-                        border-top-right-radius: 50px;
-                        overflow: hidden;
-                        min-height: 400px;
-                        width: 100%; 
-                        position: absolute;
-                        top: 0px;
-                        background-image: url('yellow_truck_in_construction_site.png');
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                    "
-                ></div>
-                <img 
-                    class="blue-connector" 
-                    style="    
-                        position: absolute;
-                        right: -6%;
-                        bottom: 63px;
-                        z-index: 11;
-                        rotate: 330deg;
-                        width: 50%;
-                    " 
-                    src="blue_connector_supply.png" 
-                    alt="Supply connector">
-                <div
-                    style="
-                        padding: 10px 30px;
-                        position: absolute;
-                        width: 100%;
-                        z-index: 5;
-                        bottom: 0px;
-                    "
-                    class="offer-card">
-                    <p 
-                        style="margin-top: 20px;  letter-spacing: 3px;"
-                        class="card-title">
-                        OFERTA
-                    </p>
-                    <hr
-                        style="border-top: #e7e7e7;
-                        border-top-style: solid;
-                        border-width: 1px;
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    ">
-                    <div
-                        class="characteristics-holder"
-                        style="display: flex; flex-direction: row;">
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; ">
-                            <img src="checkmark.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Distribuidoras
-                            </p>
-                        </div>
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center;">
-                            <img src="checkmark.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Transformistas
-                            </p>
-                        </div>
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center;">
-                            <img src="checkmark.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Fabricantes
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div 
-                class="card-holder-wrapper bigger-logo-holder" 
+                class="offer-demand-images"
                 style="
-                    width: 33%;
-                    height: 450px;
-                    max-height: 450px;
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;">
-                    <img class="chevron-img" src="chevron.png" alt="">
-                    <div class="middle-logo-container">
-                        <img 
-                            class="logo-niubild-supply-demand"
-                            style="width: 98%;" src="NIUBILD_logo_bigger.png" alt="NiuBild Logo">
-                    </div>
-                    <img class="chevron-img" src="chevron.png" alt="">
-            </div>
+                    border-top-left-radius: 50px;
+                    overflow: hidden;
+                    min-height: 400px;
+                    width: 100%; 
+                    position: absolute;
+                    top: 0px;
+                    background-image: url('architect_site.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                "
+                aria-label="Arquitecto en sitio de construcción"
+            ></div>
             <div
-                class="card-holder-wrapper card-holder-demand"
-                style="position: relative; width: 33%; height: 450px; max-height: 450px;">
-                
-                <img 
-                    style="    
-                        position: absolute;
-                        left: -15%;
-                        bottom: 100px;
-                        z-index: 11;
-                        rotate: 0;
-                        width: 50%;
-                    " 
-                    class="orange-connector" 
-                    src="orange_connector_demand.png" 
-                    alt="Demand connector">
+                style="
+                    padding: 10px 30px;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 5;
+                    bottom: 0px;
+                "
+                class="demand-card">
+                <p 
+                    style="margin-top: 20px; text-align: right; color: #F55111; letter-spacing: 3px;"
+                    class="card-title">
+                    DEMANDA
+                </p>
+                <hr
+                    style="border-top: #e7e7e7;
+                    border-top-style: solid;
+                    border-width: 1px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                ">
                 <div
-                    class="offer-demand-images"
-                    style="
-                        border-top-left-radius: 50px;
-                        overflow: hidden;
-                        min-height: 400px;
-                        width: 100%; 
-                        position: absolute;
-                        top: 0px;
-                        background-image: url('architect_site.png');
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                    "
-                ></div>
-                <div
-                    style="
-                        padding: 10px 30px;
-                        position: absolute;
-                        width: 100%;
-                        z-index: 5;
-                        bottom: 0px;
-                    "
-                    class="demand-card">
-                    <p 
-                        style="margin-top: 20px; text-align: right; color: #F55111; letter-spacing: 3px;"
-                        class="card-title">
-                        DEMANDA
-                    </p>
-                    <hr
-                        style="border-top: #e7e7e7;
-                        border-top-style: solid;
-                        border-width: 1px;
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    ">
+                    class="characteristics-holder"
+                    style="display: flex; flex-direction: row; justify-content: right;">
                     <div
-                        class="characteristics-holder"
-                        style="display: flex; flex-direction: row; justify-content: right;">
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
-                            <img src="orange_checkmarks.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Distribuidoras
-                            </p>
-                        </div>
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
-                            <img src="orange_checkmarks.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Transformistas
-                            </p>
-                        </div>
-                        <div
-                            style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
-                            <img src="orange_checkmarks.png" alt="">
-                            <p
-                                class="card-characteristic">
-                                Fabricantes
-                            </p>
-                        </div>
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
+                        <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
+                        <p
+                            class="card-characteristic">
+                            Distribuidoras
+                        </p>
+                    </div>
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
+                        <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
+                        <p
+                            class="card-characteristic">
+                            Transformistas
+                        </p>
+                    </div>
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
+                        <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
+                        <p
+                            class="card-characteristic">
+                            Fabricantes
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-<!-- Why Choose Us Section -->
-<section    style="margin-top: 100px" class="why-choose-section">
+    </div>
+</section><!-- Why Choose Us Section -->
+<section style="margin-top: 100px" id="ventajas" class="why-choose-section" aria-label="Razones para elegir NiuBild">
     <div class="blue-section">
         <div class="content-container">
             <p class="sobre-nosotros">SOBRE NOSOTROS</p>
@@ -679,7 +772,7 @@
             <!-- Benefit 1 -->
             <div class="benefit-item">
                 <div class="benefit-icon">
-                    <img src="clock.png" alt="Ahorra tiempo y dinero">
+                    <img src="clock.png" alt="Ícono de reloj">
                 </div>
                 <div class="benefit-content">
                     <h3 class="benefit-title">Ahorra tiempo y dinero</h3>
@@ -690,7 +783,7 @@
             <!-- Benefit 2 -->
             <div class="benefit-item">
                 <div class="benefit-icon">
-                    <img src="truck.png" alt="Entrega ultra rápida">
+                    <img src="truck.png" alt="Ícono de camión">
                 </div>
                 <div class="benefit-content">
                     <h3 class="benefit-title">Entrega ultra rápida</h3>
@@ -701,7 +794,7 @@
             <!-- Benefit 3 -->
             <div class="benefit-item">
                 <div class="benefit-icon">
-                    <img src="network.png" alt="Geolocalización en tiempo real">
+                    <img src="network.png" alt="Ícono de geolocalización">
                 </div>
                 <div class="benefit-content">
                     <h3 class="benefit-title">Geolocalización en tiempo real</h3>
@@ -712,7 +805,7 @@
             <!-- Benefit 4 -->
             <div class="benefit-item">
                 <div class="benefit-icon">
-                    <img src="handshake.png" alt="Proceso 100% transparente">
+                    <img src="handshake.png" alt="Ícono de apretón de manos">
                 </div>
                 <div class="benefit-content">
                     <h3 class="benefit-title">Proceso 100% transparente</h3>
@@ -837,12 +930,12 @@
 </style>
 
 <!-- Services Section -->
-<section class="niubild-services-section">
+<section id="servicios" class="niubild-services-section" aria-label="Servicios de NiuBild">
     <div class="services-wrapper">
         <!-- Left side - Phone with proper background -->
         <div class="phone-container">
             <div class="phone-background"></div>
-            <img src="NIUBILD_phone_services.png" alt="NiuBild App" class="phone-image">
+            <img src="NIUBILD_phone_services.png" alt="Aplicación móvil de NiuBild" class="phone-image">
         </div>
         
         <!-- Right side - Service content -->
@@ -852,9 +945,7 @@
                 <p class="services-label">QUE OFRECEMOS</p>
                 <h2 class="services-heading">Nuestros Servicios</h2>
                 <hr class="services-divider">
-            </div>
-            
-            <!-- Service items -->
+            </div><!-- Service items -->
             <div class="services-items">
                 <!-- Service Names -->
                 <div class="service-titles">
@@ -918,7 +1009,7 @@
 
                     <img class="service-image" src="BILDReport_image.png" alt="BildReport service" class="service-img">
 
-                    <img class="service-image" src="BILDChat_image.png" alt="">
+                    <img class="service-image" src="BILDChat_image.png" alt="ChatBild service">
                 </div>
                 
                 <!-- Service Descriptions -->
@@ -939,314 +1030,296 @@
             </div>
         </div>
     </div>
-</section>
-
-<style>
-.service-title-mobile-square {
-
-}
-
-/* Services Section Styles */
-.niubild-services-section {
-    margin-top: 100px !important;
-    margin-bottom: 100px !important;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
-    box-shadow: 0px 0px 8.2px 0px #00000040;
-    margin: 0;
-    padding: 0;
-}
-
-.services-wrapper {
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* Phone Container with Background */
-.phone-container {
-    width: 30%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.phone-background {    
-    width: 95%;
-    height: 80%;
-    position: absolute;
-    left: 0;
-    /* top: 12%; */
-    background-image: url(phone_services_background.png);
-    background-size: 100% 100%;
-    background-position: center right;
-    z-index: 1;
-}
-
-.phone-image {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 2;
-    margin-left: 0;
-}
-
-/* Services Content */
-.services-content {
-    width: 70%;
-    padding: 0;
-    margin: 0;
-}
-
-/* Header */
-.services-header {    
-    text-align: center;
-    /* margin-bottom: 25px; */
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.services-label {
-    font-family: 'Montserrat', sans-serif;
-    color: #002856;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 0 5px;
-    letter-spacing: 0.5px;
-}
-
-.services-heading {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    font-size: 34px;
-    font-weight: 700;
-    margin: 0 0 15px;
-}
-
-.services-divider {
-    border: none;
-    height: 1px;
-    background-color: #e5e5e5;
-    margin: 8px auto 0;
-    width: 70%;
-}
-
-/* Service Items Container */
-.services-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 100%;
-    height: 290px;
-    padding-right: 0;
-}
-
-/* Service Titles */
-.service-titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    padding-right: 0;
-}
-
-.service-title {
-    width: 24%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.bild-text {
-    color: #333;
-}
-
-.xpress-text, .plan-text, .report-text, .bild-accent {
-    color: #FB5111;
-}
-
-.chat-text {
-    color: #002856;
-}
-
-/* Service Images */
-.service-images {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-    padding-right: 0;
-}
-.service-image {
-    width: 25%;
-    max-height: 150px;
-    max-width: 275px;
-}
-
-.image-container {
-    width: 24%;
-    height: 120px;
-    overflow: hidden;
-}
-
-.service-img {
-    width: 20%;
-    height: auto;
-    height: fit-content;
-    object-fit: cover;
-}
-
-/* Service Descriptions */
-.service-descriptions {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0;
-}
-
-.description-box {
-    width: 24%;
-    background-color: #FB5111;
-    color: white;
-    padding: 12px 15px;
-    height: 75px;
-    align-items: self-start;
-    display: flex;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.first-box {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.last-box {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.description-box p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
-    line-height: 1.3;
-    margin: 0;
-    width: 100%;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .service-title {
-        font-size: 25px;
-    }
-    .niubild-services-section {
-        height: auto;
+</section><style>
+    .service-title-mobile-square {
+    
     }
     
-    .description-box {
-        height: auto;
+    /* Services Section Styles */
+    .niubild-services-section {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
+        box-shadow: 0px 0px 8.2px 0px #00000040;
+        margin: 0;
+        padding: 0;
     }
     
     .services-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
-}
-.service-descriptions-mobile {
-    display: none;
-}
-@media (max-width: 981px) {
-    .description-box {
-        height: 100% !important;
+    
+    /* Phone Container with Background */
+    .phone-container {
+        width: 30%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
-    .service-title-mobile-square {
-        width: 48%;
-        gap: 10px;
+    
+    .phone-background {    
+        width: 95%;
+        height: 80%;
+        position: absolute;
+        left: 0;
+        /* top: 12%; */
+        background-image: url(phone_services_background.png);
+        background-size: 100% 100%;
+        background-position: center right;
+        z-index: 1;
     }
-    .service-titles {
-        display: none;
+    
+    .phone-image {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+        margin-left: 0;
     }
-    .service-title {
+    
+    /* Services Content */
+    .services-content {
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Header */
+    .services-header {    
         text-align: center;
-        width: 100%;
+        /* margin-bottom: 25px; */
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
     }
-    .service-descriptions-mobile {
-        border-radius: 15px !important;
-        gap: 1% !important;
-        flex-flow: wrap !important;
-        width: 100% !important;
-        display: flex !important;
+    
+    .services-label {
+        font-family: 'Montserrat', sans-serif;
+        color: #002856;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 5px;
+        letter-spacing: 0.5px;
     }
-    .service-descriptions {
-        display: none !important;
+    
+    .services-heading {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        font-size: 34px;
+        font-weight: 700;
+        margin: 0 0 15px;
     }
-    .phone-background {
-        display: none !important;
+    
+    .services-divider {
+        border: none;
+        height: 1px;
+        background-color: #e5e5e5;
+        margin: 8px auto 0;
+        width: 70%;
     }
+    
+    /* Service Items Container */
     .services-items {
-        height: fit-content !important
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+        height: 290px;
+        padding-right: 0;
     }
-    .services-header {
-        height: 210px !important;
+    
+    /* Service Titles */
+    .service-titles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding-right: 0;
+    }
+    
+    .service-title {
+        width: 24%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    
+    .bild-text {
+        color: #333;
+    }
+    
+    .xpress-text, .plan-text, .report-text, .bild-accent {
+        color: #FB5111;
+    }
+    
+    .chat-text {
+        color: #002856;
+    }
+    
+    /* Service Images */
+    .service-images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding-right: 0;
     }
     .service-image {
-        display: none  !important;
-    }
-    .services-wrapper {
-        flex-direction: column;   
-        padding-bottom: 100px;
-    }
-    .service-title {
-        margin-bottom: 10px;
+        width: 25%;
+        max-height: 150px;
+        max-width: 275px;
     }
     
-    .phone-container, .services-content {
+    .image-container {
+        width: 24%;
+        height: 120px;
+        overflow: hidden;
+    }
+    
+    .service-img {
+        width: 20%;
+        height: auto;
+        height: fit-content;
+        object-fit: cover;
+    }
+    
+    /* Service Descriptions */
+    .service-descriptions {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+    
+    .description-box {
+        width: 24%;
+        background-color: #FB5111;
+        color: white;
+        padding: 12px 15px;
+        height: 75px;
+        align-items: self-start;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .first-box {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .last-box {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .description-box p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 13px;
+        line-height: 1.3;
+        margin: 0;
         width: 100%;
     }
     
-    .phone-container {
-        height: 400px;
-        margin-bottom: 40px;
-        justify-content: center;
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+        .service-title {
+            font-size: 25px;
+        }
+        .niubild-services-section {
+            height: auto;
+        }
+        
+        .description-box {
+            height: auto;
+        }
+        
+        .services-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     }
-    
-    .phone-background {
-        background-position: center;
+    .service-descriptions-mobile {
+        display: none;
     }
-}
-</style>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
+    @media (max-width: 981px) {
+        .description-box {
+            height: 100% !important;
+        }
+        .service-title-mobile-square {
+            width: 48%;
+            gap: 10px;
+        }
+        .service-titles {
+            display: none;
+        }
+        .service-title {
+            text-align: center;
+            width: 100%;
+        }
+        .service-descriptions-mobile {
+            border-radius: 15px !important;
+            gap: 1% !important;
+            flex-flow: wrap !important;
+            width: 100% !important;
+            display: flex !important;
+        }
+        .service-descriptions {
+            display: none !important;
+        }
+        .phone-background {
+            display: none !important;
+        }
+        .services-items {
+            height: fit-content !important
+        }
+        .services-header {
+            height: 210px !important;
+        }
+        .service-image {
+            display: none  !important;
+        }
+        .services-wrapper {
+            flex-direction: column;   
+            padding-bottom: 100px;
+        }
+        .service-title {
+            margin-bottom: 10px;
+        }
+        
+        .phone-container, .services-content {
+            width: 100%;
+        }
+        
+        .phone-container {
+            height: 400px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        .phone-background {
+            background-position: center;
+        }
+    }
+    </style><style>
     /* Blue bottom section */
     .one_click_blue_section {
         background-color: #002856;
@@ -1386,7 +1459,8 @@
 </style>
 
 <section
-    id="one_click">
+    id="one_click"
+    aria-label="One Click Experience - Lo que nos hace únicos">
 
     <!-- Top orange section -->
     <div 
@@ -1405,56 +1479,127 @@
                     One Click Experience
                 </span>
             </p>
-        </div>
+        </div><div
+        style="width: 15%; margin-left: 2.5%; border-bottom: 1px white solid; margin-top: 50px">
+    </div>
+    <div
+        class="orange_content_main_holder"
+        style="display: flex; flex-direction: row; align-items: center; position: relative; z-index: 1;">
+        <img class="one_click_background_image" style="position: absolute; width: 100%;  top: 35%" src="orange_gradient_background.png" alt="Fondo degradado naranja">
+        <!-- First image -->
         <div
-            style="width: 15%; margin-left: 2.5%; border-bottom: 1px white solid; margin-top: 50px">
+            class="image_in_one_click_left"
+            style="width: 15%; position: relative; z-index: 2">
+            <img 
+                style="width: 100%;"
+                src="phone_with_pin_boxes.png" 
+                alt="Teléfono móvil con ubicaciones marcadas">
         </div>
+        <!-- Text -->
+        <p
+            style="width: 22%; position: relative; z-index: 2;">
+            <span
+                class="blue_bigger_text"
+                style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: bold;">
+                Geolocalización
+            </span>
+            <br
+                class="one_click_br">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                en tiempo real para <br> el monitoreo de tu pedido. 
+            </span>
+        </p>
         <div
-            class="orange_content_main_holder"
-            style="display: flex; flex-direction: row; align-items: center; position: relative; z-index: 1;">
-            <img class="one_click_background_image" style="position: absolute; width: 100%;  top: 35%" src="orange_gradient_background.png" alt="">
-            <!-- First image -->
-            <div
-                class="image_in_one_click_left"
-                style="width: 15%; position: relative; z-index: 2">
-                <img 
-                    style="width: 100%;"
-                    src="phone_with_pin_boxes.png" 
-                    alt="">
-            </div>
+            style="width: 23%; position: relative; z-index: 2; display: flex; flex-direction: row; justify-content: center;">
+            <!-- Central image -->
+            <img 
+                class="one_click_phone_middle"
+                style="width: auto; position: relative; z-index: 2; max-height: 500px;"
+                src="nibuild_geolocation_pin.png" 
+                alt="Geolocalización de pedidos NiuBild">
+        </div>
+        <p
+            style="width: 25%; position: relative; z-index: 2;">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                La
+            </span>
+            <span
+                class="blue_bigger_text"
+                style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: bold;">
+                transparencia
+            </span>
+            <br
+                class="one_click_br">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                del proceso de entrega hace 
+            </span>
+            <br
+                class="one_click_br">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                que conectar A con B sea <span style="color: #002856; font-weight: bold;">tan</span>
+            </span>
+            <br
+                class="one_click_br">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                <span style="color: #002856; font-weight: bold;">sencillo como dar un click</span> para
+            </span>
+            <br
+                class="one_click_br">
+            <span
+                style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
+                confirmar tu pedido.
+            </span>
+        </p>
+        <div
+            class="image_in_one_click_right"
+            style="width: 15%; position: relative; z-index: 2;">
+            <img 
+                style="width: 100%;"
+                src="graph_and_boxes.png" 
+                alt="Gráficos y cajas de información">
+        </div>
+    </div>
+    <div
+        class="orange_content_main_holder_mobile"
+        style="display: none; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+        <!-- First image -->
+        <div
+            style="display: flex; flex-direction: row; position: relative; width: 100%; align-items: center; padding-left: 0px; margin-top: 50px;">
+            <img 
+                style="width: 33%"
+                src="phone_with_pin_boxes.png" 
+                alt="Teléfono móvil con ubicaciones marcadas"> 
             <!-- Text -->
             <p
-                style="width: 22%; position: relative; z-index: 2;">
+                style="width: 67%; position: relative; z-index: 2; padding-right: 15px; text-align: right;">
                 <span
                     class="blue_bigger_text"
-                    style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: bold;">
+                    style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 20px !important; font-weight: bold;">
                     Geolocalización
                 </span>
-                <br
-                    class="one_click_br">
                 <span
                     style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                    en tiempo real para <br> el monitoreo de tu pedido. 
+                    en tiempo real para el monitoreo de tu pedido. 
                 </span>
             </p>
-            <div
-                style="width: 23%; position: relative; z-index: 2; display: flex; flex-direction: row; justify-content: center;">
-                <!-- Central image -->
-                <img 
-                    class="one_click_phone_middle"
-                    style="width: auto; position: relative; z-index: 2; max-height: 500px;"
-                    src="nibuild_geolocation_pin.png" 
-                    alt="">
-            </div>
+        </div>
+
+        <div
+            style="display: flex; flex-direction: row; position: relative; width: 100%; align-items: center; padding-left: 25px; margin-top: 40px;">
             <p
-                style="width: 25%; position: relative; z-index: 2;">
+                style="width: 67%; position: relative; z-index: 2; padding-right: 40px;">
                 <span
                     style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
                     La
                 </span>
                 <span
                     class="blue_bigger_text"
-                    style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: bold;">
+                    style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 20px !important; font-weight: bold;">
                     transparencia
                 </span>
                 <br
@@ -1482,111 +1627,31 @@
                     confirmar tu pedido.
                 </span>
             </p>
-            <div
-                class="image_in_one_click_right"
-                style="width: 15%; position: relative; z-index: 2;">
-                <img 
-                    style="width: 100%;"
-                    src="graph_and_boxes.png" 
-                    alt="">
-            </div>
-        </div>
-        <div
-            class="orange_content_main_holder_mobile"
-            style="display: none; flex-direction: column; align-items: center; position: relative; z-index: 1;">
-            <!-- First image -->
-            <div
-                style="display: flex; flex-direction: row; position: relative; width: 100%; align-items: center; padding-left: 0px; margin-top: 50px;">
-                <img 
-                    style="width: 33%"
-                    src="phone_with_pin_boxes.png" 
-                    alt=""> 
-                <!-- Text -->
-                <p
-                    style="width: 67%; position: relative; z-index: 2; padding-right: 15px; text-align: right;">
-                    <span
-                        class="blue_bigger_text"
-                        style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 20px !important; font-weight: bold;">
-                        Geolocalización
-                    </span>
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        en tiempo real para el monitoreo de tu pedido. 
-                    </span>
-                </p>
-            </div>
-
-            <div
-                style="display: flex; flex-direction: row; position: relative; width: 100%; align-items: center; padding-left: 25px; margin-top: 40px;">
-                <p
-                    style="width: 67%; position: relative; z-index: 2; padding-right: 40px;">
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        La
-                    </span>
-                    <span
-                        class="blue_bigger_text"
-                        style="color: #002856; font-family: 'Montserrat', sans-serif; font-size: 20px !important; font-weight: bold;">
-                        transparencia
-                    </span>
-                    <br
-                        class="one_click_br">
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        del proceso de entrega hace 
-                    </span>
-                    <br
-                        class="one_click_br">
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        que conectar A con B sea <span style="color: #002856; font-weight: bold;">tan</span>
-                    </span>
-                    <br
-                        class="one_click_br">
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        <span style="color: #002856; font-weight: bold;">sencillo como dar un click</span> para
-                    </span>
-                    <br
-                        class="one_click_br">
-                    <span
-                        style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500;">
-                        confirmar tu pedido.
-                    </span>
-                </p>
-                <img 
-                    style="width: 33%; height: auto;"
-                    src="graph_and_boxes.png" 
-                    alt="">
-            </div>
+            <img 
+                style="width: 33%; height: auto;"
+                src="graph_and_boxes.png" 
+                alt="Gráficos y cajas de información">
         </div>
     </div>
+</div>
 
+
+<div class="one_click_blue_section">
+    <div class="one_click_blue_content">
+        <p class="one_click_try_now">PRUEBA NIU<span class="one_click_bild_text">BILD</span> AHORA</p>
+        <h2 class="one_click_headline">No pierdas más tiempo!</h2>
+        <div class="one_click_description">
+            <p>Únete a la <span class="one_click_revolution">revolución</span> de la <span class="one_click_revolution">construcción digital.</span></p>
+        </div>
+    </div>
     
-    <div class="one_click_blue_section">
-        <div class="one_click_blue_content">
-            <p class="one_click_try_now">PRUEBA NIU<span class="one_click_bild_text">BILD</span> AHORA</p>
-            <h2 class="one_click_headline">No pierdas más tiempo!</h2>
-            <div class="one_click_description">
-                <p>Únete a la <span class="one_click_revolution">revolución</span> de la <span class="one_click_revolution">construcción digital.</span></p>
-            </div>
-        </div>
-        
-        <!-- Register button -->
-        <div class="one_click_register_button">Regístrate gratis</div>
-    </div>
+    <!-- Register button -->
+    <div class="one_click_register_button">Regístrate gratis</div>
+</div>
 
 
-</section>
-
-
-
-
-
-
-
-<!-- Contact Section -->
-<section id="contacto" class="contact-section">
+</section><!-- Contact Section -->
+<section id="contacto" class="contact-section" aria-label="Formulario de contacto">
     <!-- Blue header with angled edge -->
     <div class="contact-header">
         <h2 class="contact-title">CONTÁCTANOS</h2>
@@ -1646,16 +1711,209 @@
     </div>
 </section>
 
+<style>
+    @media screen and (max-width: 960px) {
+        .contact-header {
+            width: 100% !important;
+        }
+    }
+    /* Contact Section Styles */
+    .contact-section {
+        width: 100%;
+        margin-top: 2rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .contact-header {
+        width: 60%;
+        position: relative;
+        background-color: #002856;
+        padding: 1.5rem 5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 60px;
+    }
+    
+    .contact-header::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 4rem;
+        background-color: white;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+    
+    .contact-title {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .contact-form-container {
+        max-width: 80%;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+    
+    .contact-description {
+        color: #333;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .form-row {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-group label {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+        font-size: 0.9rem;
+    }
+    
+    .form-group input {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.9rem;
+    }
+    
+    .form-checkboxes {
+        display: flex;
+        margin: 1.5rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+        margin-right: 0.5rem;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .checkbox-group label {
+        color: #333;
+        font-size: 0.9rem;
+    }
+    
+    .privacy-link {
+        color: #FB5111;
+        text-decoration: none;
+    }
+    
+    .form-submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    .submit-button {
+        margin-top: 0px;
+        background-color: #002856;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 350px;
+    }
+    
+    .submit-button:hover {
+        background-color: #001e42;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .form-row {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-description br {
+            display: none;
+        }
+    }
+</style>
 
-
-
-
-
-<!-- Footer Section -->
-<footer class="footer">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const formDataObj = {};
+            
+            formData.forEach((value, key) => {
+                formDataObj[key] = value;
+            });
+            
+            // Example: Send data to backend using fetch API
+            fetch('https://api.example.com/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formDataObj)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Handle success
+                alert('¡Mensaje enviado correctamente! Te contactaremos pronto.');
+                contactForm.reset();
+            })
+            .catch(error => {
+                // Handle error
+                console.error('Error:', error);
+                alert('Hubo un problema al enviar el formulario. Por favor, intenta nuevamente.');
+            });
+        });
+    }
+});
+</script><!-- Footer Section -->
+<footer class="footer" aria-label="Información de contacto y horarios">
     <!-- Logo section -->
     <div class="footer-logo-section">
-        <img src="NIUBILD_logo_white.png" alt="NiuBild Logo" class="footer-logo">
+        <img src="NIUBILD_logo_white.png" alt="NiuBild Logo en blanco" class="footer-logo">
     </div>
 
     <div style="margin-bottom: 30px;" class="footer-divider"></div>
@@ -1688,9 +1946,9 @@
         </div>
         
         <div class="footer-social-icons">
-            <a href="#" class="social-icon facebook-icon"></a>
-            <a href="#" class="social-icon youtube-icon"></a>
-            <a href="#" class="social-icon instagram-icon"></a>
+            <a href="#" class="social-icon facebook-icon" aria-label="Facebook de NiuBild"></a>
+            <a href="#" class="social-icon youtube-icon" aria-label="Canal de YouTube de NiuBild"></a>
+            <a href="#" class="social-icon instagram-icon" aria-label="Instagram de NiuBild"></a>
         </div>
     </div>
 
@@ -1758,9 +2016,7 @@
             </div>
         </div>
     </div>
-</footer>
-
-<style>
+</footer><style>
     /* Footer Styles */
     .footer {
         width: 100%;
@@ -1971,258 +2227,79 @@
             gap: 1rem;
         }
     }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
-    @media screen and (max-width: 960px) {
-        .contact-header {
-            width: 100% !important;
+</style><script>
+    // Header scroll effect with smooth transition
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
         }
-    }
-    /* Contact Section Styles */
-    .contact-section {
-        width: 100%;
-        margin-top: 2rem;
-        font-family: 'Montserrat', sans-serif;
-    }
+    });
     
-    .contact-header {
-        width: 60%;
-        position: relative;
-        background-color: #002856;
-        padding: 1.5rem 5rem;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        height: 60px;
-    }
-    
-    .contact-header::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 4rem;
-        background-color: white;
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-    }
-    
-    .contact-title {
-        color: white;
-        font-size: 1.8rem;
-        font-weight: 700;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .contact-form-container {
-        max-width: 80%;
-        margin: 2rem auto;
-        padding: 0 2rem;
-    }
-    
-    .contact-description {
-        color: #333;
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .contact-form {
-        width: 100%;
-    }
-    
-    .form-row {
-        display: flex;
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .form-group {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .form-group label {
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-        color: #333;
-        font-size: 0.9rem;
-    }
-    
-    .form-group input {
-        padding: 0.8rem;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 0.9rem;
-    }
-    
-    .form-checkboxes {
-        display: flex;
-        margin: 1.5rem 0;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .checkbox-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.5rem;
-    }
-    
-    .checkbox-group input[type="checkbox"] {
-        margin-right: 0.5rem;
-        width: 18px;
-        height: 18px;
-    }
-    
-    .checkbox-group label {
-        color: #333;
-        font-size: 0.9rem;
-    }
-    
-    .privacy-link {
-        color: #FB5111;
-        text-decoration: none;
-    }
-    
-    .form-submit {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-    
-    .submit-button {
-        margin-top: 0px;
-        background-color: #002856;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        padding: 0.8rem 2.5rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        width: 350px;
-    }
-    
-    .submit-button:hover {
-        background-color: #001e42;
-    }
-    
-    /* Responsive styles */
-    @media (max-width: 768px) {
-        .form-row {
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .contact-description br {
-            display: none;
-        }
-    }
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const formDataObj = {};
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
             
-            formData.forEach((value, key) => {
-                formDataObj[key] = value;
-            });
-            
-            // Example: Send data to backend using fetch API
-            fetch('https://api.example.com/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formDataObj)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Handle success
-                alert('¡Mensaje enviado correctamente! Te contactaremos pronto.');
-                contactForm.reset();
-            })
-            .catch(error => {
-                // Handle error
-                console.error('Error:', error);
-                alert('Hubo un problema al enviar el formulario. Por favor, intenta nuevamente.');
-            });
-        });
-    }
-});
-</script>
-
-
-
-
-
-
-
-
-
-    
-    <script>
-        // Header scroll effect with smooth transition
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
             }
         });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+    });
+</script>
+
+<!-- Sitemap Integration -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://niubild.com/#inicio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Acerca de",
+          "item": "https://niubild.com/#aboutus"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nuestros Servicios",
+          "item": "https://niubild.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Ventajas",
+          "item": "https://niubild.com/#ventajas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "One Click Experience",
+          "item": "https://niubild.com/#one_click"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Contacto",
+          "item": "https://niubild.com/#contacto"
+        }
+      ]
+    }
     </script>
 </body>
 </html>

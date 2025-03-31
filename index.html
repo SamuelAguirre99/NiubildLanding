@@ -25,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">
     {
@@ -87,7 +89,7 @@
         "name": "NiuBild"
       },
       "serviceType": "Plataforma de conexión",
-      "description": "Conectamos constructoras, contratistas y proyectos con proveedores de materiales de construcción, ofreciendo entrega rápida y transparencia en precios.",
+      "description": "Conectamos consumidores, constructoras, contratistas y proyectos con proveedores de materiales de construcción, ofreciendo entrega rápida y transparencia en precios.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -341,7 +343,8 @@
             }
         }
     </style>
-</head><body>
+</head>
+<body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -374,6 +377,9 @@
         <div 
             class="gradient-container">
             <h1     
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 class="hero-title">
                 CONSIGUE MATERIALES DE CONSTRUCCIÓN 
                 <span 
@@ -382,18 +388,25 @@
                 </span>
             </h1>
             <p 
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
                 class="hero-subtitle">
-                La plataforma que conecta constructoras, contratistas y proyectos con 
+                La plataforma que conecta a consumidores, constructoras, contratistas y proyectos con 
                 los materiales que necesitas, con entrega rápida y transparente.
             </p>
             <a 
+                data-aos="fade-right"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-out"
                 href="#registro" 
                 class="cta-button"
                 aria-label="Regístrate gratis en NiuBild">
                 Regístrate gratis
             </a>
         </div>
-    </section><style>
+    </section>
+    <style>
         .section-header {
             margin-top: 25px;
             gap: 30px;
@@ -558,13 +571,23 @@
         aria-label="¿Cómo funciona NiuBild?">
         <div class="section-header">
             <p 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 class="section-title">
                 ACERCA DE
             </p>
-            <h2 class="section-heading">
+            <h2
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-out"
+                class="section-heading">
                 ¿Cómo funciona?
             </h2>
             <p 
+                data-aos="fade-up"
+                data-aos-duration="750"
+                data-aos-easing="ease-in-out"
                 class="section-text">
                 Conectar la oferta a través de la plataforma NiuBild 
                 con la Demanda de manera ágil, transparente y 
@@ -574,6 +597,9 @@
         style="margin-top: 50px"
         class="section-content">
         <div
+            data-aos="fade-right"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
             class="card-holder-wrapper"
             style="position: relative; width: 33%; height: 450px; max-height: 450px;">
             <div
@@ -656,6 +682,9 @@
             </div>
         </div>
         <div 
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             class="card-holder-wrapper bigger-logo-holder" 
             style="
                 width: 33%;
@@ -675,6 +704,9 @@
                 <img class="chevron-img" src="chevron.png" alt="Flecha de dirección">
         </div>
         <div
+            data-aos="fade-left"
+            data-aos-duration="1100"
+            data-aos-easing="ease-in-out"
             class="card-holder-wrapper card-holder-demand"
             style="position: relative; width: 33%; height: 450px; max-height: 450px;">
             
@@ -735,7 +767,7 @@
                         <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
                         <p
                             class="card-characteristic">
-                            Distribuidoras
+                            Clientes
                         </p>
                     </div>
                     <div
@@ -743,7 +775,7 @@
                         <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
                         <p
                             class="card-characteristic">
-                            Transformistas
+                            Contratistas
                         </p>
                     </div>
                     <div
@@ -751,7 +783,15 @@
                         <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
                         <p
                             class="card-characteristic">
-                            Fabricantes
+                            Constructores
+                        </p>
+                    </div>
+                    <div
+                        style="flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: end;">
+                        <img src="orange_checkmarks.png" alt="Marca de verificación naranja">
+                        <p
+                            class="card-characteristic">
+                            Proyectos
                         </p>
                     </div>
                 </div>
@@ -761,14 +801,27 @@
 </section><!-- Why Choose Us Section -->
 <section style="margin-top: 100px" id="ventajas" class="why-choose-section" aria-label="Razones para elegir NiuBild">
     <div class="blue-section">
-        <div class="content-container">
-            <p class="sobre-nosotros">SOBRE NOSOTROS</p>
-            <h2 class="why-choose-title">¿Porqué elegirnos?</h2>
+        <div 
+            class="content-container">
+            <p 
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="sobre-nosotros">SOBRE NOSOTROS</p>
+            <h2
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                class="why-choose-title">¿Porqué elegirnos?</h2>
         </div>
     </div>
     
     <div class="orange-section">
-        <div class="benefits-container">
+        <div 
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            class="benefits-container">
             <!-- Benefit 1 -->
             <div class="benefit-item">
                 <div class="benefit-icon">
@@ -781,7 +834,11 @@
             </div>
             
             <!-- Benefit 2 -->
-            <div class="benefit-item">
+            <div
+                data-aos="fade-right"
+                data-aos-duration="850"
+                data-aos-easing="ease-in-out" 
+                class="benefit-item">
                 <div class="benefit-icon">
                     <img src="truck.png" alt="Ícono de camión">
                 </div>
@@ -792,7 +849,11 @@
             </div>
             
             <!-- Benefit 3 -->
-            <div class="benefit-item">
+            <div
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-out"  
+                class="benefit-item">
                 <div class="benefit-icon">
                     <img src="network.png" alt="Ícono de geolocalización">
                 </div>
@@ -803,7 +864,11 @@
             </div>
             
             <!-- Benefit 4 -->
-            <div class="benefit-item">
+            <div 
+                data-aos="fade-right"
+                data-aos-duration="950"
+                data-aos-easing="ease-in-out"  
+                class="benefit-item">
                 <div class="benefit-icon">
                     <img src="handshake.png" alt="Ícono de apretón de manos">
                 </div>
@@ -935,34 +1000,71 @@
         <!-- Left side - Phone with proper background -->
         <div class="phone-container">
             <div class="phone-background"></div>
-            <img src="NIUBILD_phone_services.png" alt="Aplicación móvil de NiuBild" class="phone-image">
+            <img 
+                data-aos="fade-right"
+                data-aos-duration="950"
+                data-aos-easing="ease-in-out"  
+                src="NIUBILD_phone_services.png" 
+                alt="Aplicación móvil de NiuBild" 
+                class="phone-image">
         </div>
         
         <!-- Right side - Service content -->
         <div class="services-content">
             <!-- Header -->
             <div class="services-header">
-                <p class="services-label">QUE OFRECEMOS</p>
-                <h2 class="services-heading">Nuestros Servicios</h2>
+                <p 
+                    data-aos="fade-up"
+                    data-aos-duration="950"
+                    data-aos-easing="ease-in-out" 
+                    class="services-label">
+                    QUE OFRECEMOS
+                </p>
+                <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1050"
+                    data-aos-easing="ease-in-out" 
+                    class="services-heading">
+                    Nuestros Servicios
+                </h2>
                 <hr class="services-divider">
             </div><!-- Service items -->
             <div class="services-items">
                 <!-- Service Names -->
                 <div class="service-titles">
-                    <div class="service-title"><span class="bild-text">Bild</span><span class="xpress-text">Xpress</span></div>
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
+                        class="service-title"><span class="bild-text">Bild</span><span class="xpress-text">Xpress</span></div>
 
-                    <div class="service-title"><span class="bild-text">Bild</span><span class="plan-text">Plan</span></div>
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-out" 
+                        class="service-title"><span class="bild-text">Bild</span><span class="plan-text">Plan</span></div>
 
 
-                    <div class="service-title"><span class="bild-text">Bild</span><span class="report-text">Report</span></div>
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                        data-aos-easing="ease-in-out" 
+                        class="service-title"><span class="bild-text">Bild</span><span class="report-text">Report</span></div>
 
-                    <div class="service-title"><span class="chat-text">Chat</span><span class="bild-accent">Bild</span></div>
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" 
+                        class="service-title"><span class="chat-text">Chat</span><span class="bild-accent">Bild</span></div>
                 </div> 
 
                 <div class="service-descriptions-mobile">
 
 
                     <div
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
                         class="service-title-mobile-square">
                         <div class="service-title"><span class="bild-text">Bild</span><span class="xpress-text">Xpress</span></div>
     
@@ -973,6 +1075,9 @@
                     </div>
 
                     <div
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
                         class="service-title-mobile-square">
                         <div class="service-title"><span class="bild-text">Bild</span><span class="plan-text">Plan</span></div>
                         <div class="service-descriptions-mobile description-box">
@@ -982,6 +1087,9 @@
 
 
                     <div
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
                         style="margin-top: 60px"
                         class="service-title-mobile-square">
                         <div class="service-title"><span class="bild-text">Bild</span><span class="report-text">Report</span></div>
@@ -991,7 +1099,10 @@
                     </div>
 
                     <div
-                    style="margin-top: 60px"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
+                        style="margin-top: 60px"
                         class="service-title-mobile-square">
                         <div class="service-title"><span class="chat-text">Chat</span><span class="bild-accent">Bild</span></div>
                         <div class="service-descriptions-mobile description-box last-box">
@@ -1003,27 +1114,59 @@
                 
                 <!-- Service Images -->
                 <div class="service-images">
-                    <img class="service-image" src="BILDXpress_image.png" alt="BildXpress service" class="service-img">
+                    <img 
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
+                        class="service-image" src="BILDXpress_image.png" alt="BildXpress service" class="service-img">
 
-                    <img class="service-image" src="BILDPlan_image.png" alt="BildPlan service" class="service-img">
+                    <img 
+                        data-aos="fade-up"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-out" 
+                        class="service-image" src="BILDPlan_image.png" alt="BildPlan service" class="service-img">
 
-                    <img class="service-image" src="BILDReport_image.png" alt="BildReport service" class="service-img">
+                    <img 
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                        data-aos-easing="ease-in-out" 
+                        class="service-image" src="BILDReport_image.png" alt="BildReport service" class="service-img">
 
-                    <img class="service-image" src="BILDChat_image.png" alt="ChatBild service">
+                    <img 
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" 
+                        class="service-image" src="BILDChat_image.png" alt="ChatBild service">
                 </div>
                 
                 <!-- Service Descriptions -->
                 <div class="service-descriptions">
-                    <div class="description-box first-box">
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out" 
+                        class="description-box first-box">
                         <p><b>Entrega en el mismo día</b>,<br>ideal para pedidos urgentes.</p>
                     </div>
-                    <div class="description-box">
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="900"
+                        data-aos-easing="ease-in-out" 
+                        class="description-box">
                         <p><b>Entrega programada</b>.<br>Perfecto para planificar compras grandes.</p>
                     </div>
-                    <div class="description-box">
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                        data-aos-easing="ease-in-out" 
+                        class="description-box">
                         <p><b>Optimiza tus compras</b>.<br>Reportes y gestión de pedidos.</p>
                     </div>
-                    <div class="description-box last-box">
+                    <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" 
+                        class="description-box last-box">
                         <p><b>Soporte con AI</b>.<br>Atención inmediata y personalizada.</p>
                     </div>
                 </div>
@@ -1468,13 +1611,19 @@
         <div
             class="one_click_orange_header">
             <p>
-                <span   
+                <span  
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"  
                     style="font-family: 'Montserrat', sans-serif; font-size: 14px; color: white; letter-spacing: 4px;">
                     LO QUE NOS HACE ÚNICOS
                 </span>
                 <br>
                 <br>
                 <span
+                    data-aos="fade-up"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-out"  
                     style="font-family: 'Montserrat', sans-serif; font-size: 40px; color: white; letter-spacing: 4px; font-weight: bold;">
                     One Click Experience
                 </span>
@@ -1483,6 +1632,9 @@
         style="width: 15%; margin-left: 2.5%; border-bottom: 1px white solid; margin-top: 50px">
     </div>
     <div
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        data-aos-easing="ease-in-out"  
         class="orange_content_main_holder"
         style="display: flex; flex-direction: row; align-items: center; position: relative; z-index: 1;">
         <img class="one_click_background_image" style="position: absolute; width: 100%;  top: 35%" src="orange_gradient_background.png" alt="Fondo degradado naranja">
@@ -1636,17 +1788,34 @@
 </div>
 
 
-<div class="one_click_blue_section">
+<div 
+    class="one_click_blue_section">
     <div class="one_click_blue_content">
-        <p class="one_click_try_now">PRUEBA NIU<span class="one_click_bild_text">BILD</span> AHORA</p>
-        <h2 class="one_click_headline">No pierdas más tiempo!</h2>
-        <div class="one_click_description">
+        <p
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"  
+            class="one_click_try_now">PRUEBA NIU<span class="one_click_bild_text">BILD</span> AHORA</p>
+        <h2 
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out" 
+            class="one_click_headline">No pierdas más tiempo!</h2>
+        <div 
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out" 
+            class="one_click_description">
             <p>Únete a la <span class="one_click_revolution">revolución</span> de la <span class="one_click_revolution">construcción digital.</span></p>
         </div>
     </div>
     
     <!-- Register button -->
-    <div class="one_click_register_button">Regístrate gratis</div>
+    <div 
+        data-aos="fade-down"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out" 
+        class="one_click_register_button">Regístrate gratis</div>
 </div>
 
 
@@ -1654,12 +1823,20 @@
 <section id="contacto" class="contact-section" aria-label="Formulario de contacto">
     <!-- Blue header with angled edge -->
     <div class="contact-header">
-        <h2 class="contact-title">CONTÁCTANOS</h2>
+        <h2 
+            data-aos="fade-down"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out" 
+            class="contact-title">CONTÁCTANOS</h2>
     </div>
     
     <!-- Contact form container -->
     <div class="contact-form-container">
-        <p class="contact-description">
+        <p 
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="contact-description">
             Déjanos tus datos para enviarte información más detallada sobre<br>
             nuestros servicios.
         </p>
@@ -1667,7 +1844,11 @@
         <form 
             style="padding-bottom: 40px"
             id="contactForm" class="contact-form">
-            <div class="form-row">
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                class="form-row">
                 <div class="form-group">
                     <label for="nombre">Nombre*</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
@@ -1678,7 +1859,11 @@
                 </div>
             </div>
             
-            <div class="form-row">
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="1600"
+                data-aos-easing="ease-in-out"
+                class="form-row">
                 <div class="form-group">
                     <label for="telefono">Número de teléfono</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
@@ -1689,7 +1874,11 @@
                 </div>
             </div>
             
-            <div class="form-checkboxes">
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
+                class="form-checkboxes">
                 <div 
                     style="margin-top: 30px"
                     class="checkbox-group">
@@ -1704,7 +1893,11 @@
                 </div>
             </div>
             
-            <div class="form-submit">
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="form-submit">
                 <button type="submit" class="submit-button">Enviar</button>
             </div>
         </form>
